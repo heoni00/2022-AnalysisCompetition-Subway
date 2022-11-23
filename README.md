@@ -67,7 +67,8 @@
 ```python
 공기질척도 = (미세먼지 / 100) + (포름알데히드 / 100 )+ (초미세먼지 / 50) + (일산화탄소 / 10) + (이산화탄소 / 1000)
 ```
-![image](https://user-images.githubusercontent.com/67791317/203372780-a557cde6-db0d-473a-8508-3a776b46d2da.jpeg){: width="40%" height="40%"}
+![image](https://user-images.githubusercontent.com/67791317/203579637-f51700ca-75b5-486e-9b5e-baeb971c2bd2.png)
+
 
 2. 각 변수들의 영향력을 동일하게 하기 위해, feature scaling 진행 
 3. Standard Scaler로 정규화 진행, MinMax Scaler를 통해 피쳐의 범위를 0~1 사이로 변환
@@ -100,7 +101,7 @@ K-mean 클러스터링을 통해 공기정화시스템 설치후보구역을 선
 4. plot이 감소하는 추세가 급격한 지점이 elbow point로 해당 지점을 군집의 개수로 사용. 
 5. 각 군집별 변수 평균을 계산함. 
 
-![image](https://user-images.githubusercontent.com/67791317/203375788-c024ef10-719a-4001-ac39-5bb3b601c4c3.jpeg){: width="40%" height="40%"}
+![image](https://user-images.githubusercontent.com/67791317/203579838-acf2e254-152e-4ad9-b2eb-5f049e92cdbe.png)
 
 6. 0번 군집이 공기질 점수와 평균혼잡도와 환승역 개수가 크므로 0번 군집에 해당하는 역을 우선 설치군집으로 채택
 
@@ -123,7 +124,7 @@ K-mean 클러스터링을 통해 공기정화시스템 설치후보구역을 선
 가장 지수가 높은 역 3개를 뽑아 최종 입지로 선정하였다. 
 
 **1호선 서울역, 2호선 강남역, 2호선 시청역**
-![image](https://user-images.githubusercontent.com/67791317/203375901-5667c97b-1fa2-431c-906f-783dd032c606.jpeg){: width="60%" height="60%"}
+![image](https://user-images.githubusercontent.com/67791317/203579982-8434df66-05f0-41d1-9a7c-a001d683740a.png)
 
 ### 레퍼런스 
 
